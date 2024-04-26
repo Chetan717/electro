@@ -30,7 +30,7 @@ const nextConfig = {
     allowedExternalDomains: ["", "another-origin.com"],
   },
   env: {
-    GRAPHQL_SERVER: "http://localhost:8000/graph",
+    GRAPHQL_SERVER: "https://serverelectronic.vercel.app/graph",
     SHIPPING: "Pay To Delivery Partner",
     Discount: "10",
   },
