@@ -20,7 +20,7 @@ export default function ListOfOrder({ OrderData, refetch, loading }) {
     <>
       <ToastContainer />
       <div className="flex mt-5 lg:w-3/4 w-full justify-center items-center flex-col gap-5 lg:p-3 p-1">
-        <h1 className=" mt-2 lg:text-xl text-sm text-teal-500 font-bold">
+        <h1 className=" mt-2 lg:text-xl text-sm text-yellow-500 font-bold">
           Order Details
         </h1>
         {OrderData?.map((i) => {
@@ -108,7 +108,7 @@ export default function ListOfOrder({ OrderData, refetch, loading }) {
                         <dt class="font-medium text-sm text-gray-900">
                           Total :{" "}
                         </dt>
-                        <dd class="font-medium text-teal-500">
+                        <dd class="font-medium text-yellow-500">
                           ₹{i?.totalAmount}
                         </dd>
                       </div>

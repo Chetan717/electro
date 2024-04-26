@@ -44,6 +44,6 @@
     "src/app/ProductInfo/[product]/page.jsx",
     "src/app/ProductInfo/Comp/RelatedProduct/Related.js",
     "src/app/CompUtils/SearchPro/HandleSearch.jsx"
-, "src/app/CartOperation/SubComp/AdressInput.jsx", "src/app/CartOperation/SubComp/Address.jsx", "src/app/CartOperation/CartMain.jsx"  ],
+, "src/app/CartOperation/SubComp/AdressInput.jsx", "src/app/CartOperation/SubComp/Address.jsx", "src/app/CartOperation/CartMain.jsx", "src/app/specification/Specification.jsx"  ],
   "exclude": ["node_modules"]
 }

@@ -176,7 +176,7 @@ export default function SignUp({ setStatus, statusca, setStatusca }) {
     <>
       <button
         onClick={() => setStatusca(true)}
-        className="bg-[#00DDB8] text-white font-semibold text-xs cursor-pointer rounded-lg p-2 "
+        className="bg-white text-black font-semibold text-xs cursor-pointer rounded-lg p-2 "
       >
         Signup
       </button>
@@ -256,7 +256,7 @@ export default function SignUp({ setStatus, statusca, setStatusca }) {
                         </label>
                         <a
                           href="#"
-                          class="text-xs text-gray-600 hover:underline focus:text-teal-500"
+                          class="text-xs text-gray-600 hover:underline focus:text-yellow-500"
                         >
                           Forgot Password?
                         </a>
@@ -276,7 +276,7 @@ export default function SignUp({ setStatus, statusca, setStatusca }) {
                     {load ? (
                       <Button
                         isLoading
-                        className="font-semibold text-sm text-white transition-colors duration-300 bg-[#00DDB8]"
+                        className="font-semibold text-sm text-white transition-colors duration-300 bg-black"
                         spinner={
                           <svg
                             className="animate-spin h-5 w-5 text-current"
@@ -304,7 +304,7 @@ export default function SignUp({ setStatus, statusca, setStatusca }) {
                       </Button>
                     ) : (
                       <Button
-                        className="font-semibold text-sm text-white transition-colors duration-300 bg-[#00DDB8]"
+                        className="font-semibold text-sm text-white transition-colors duration-300 bg-black"
                         onClick={(event) =>
                           HandleSignUp(login, event, SIGNUP, onClose)
                         }

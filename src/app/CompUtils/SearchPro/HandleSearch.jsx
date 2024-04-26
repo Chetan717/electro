@@ -16,11 +16,12 @@ export const SearchIcon = (props) => (
   <svg
     aria-hidden="true"
     fill="none"
+    color="#fff"
     focusable="false"
     height="1em"
     role="presentation"
     viewBox="0 0 24 24"
-    width="1em"
+    width="1.5em"
     {...props}
   >
     <path
@@ -55,15 +56,16 @@ export default function HandleSearch() {
   return (
     <>
       {backdrops.map((b) => (
-        <Image
-          key={b}
-          className="cursor-pointer"
-          onClick={() => handleOpen(b)}
-          src="/img/search.png"
-          alt="S"
-          width={22}
-          height={22}
-        />
+        // <Image
+        //   key={b}
+        //   className="cursor-pointer"
+        //   onClick={() => handleOpen(b)}
+        //   src="/img/search.png"
+        //   alt="S"
+        //   width={22}
+        //   height={22}
+        // />
+        <SearchIcon onClick={() => handleOpen(b)} key={b} />
       ))}
 
       <Modal

@@ -43,7 +43,7 @@ export default function Related({ type }) {
                     <div className="flex flex-wrap justify-start items-start ">
                       <p class=" font-semibold inline-flex flex-col gap-1 text-gray-800 lg:text-sm text-[10px]">
                         {item.product_name}
-                        <span className="  text-teal-500 lg:text-xl font-bold text-sm  leading-none flex items-center">
+                        <span className="  text-yellow-500 lg:text-xl font-bold text-sm  leading-none flex items-center">
                           {" "}
                           ₹{item.price}
                         </span>

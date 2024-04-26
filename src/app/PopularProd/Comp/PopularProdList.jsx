@@ -29,11 +29,11 @@ export default function PopularProdList({ selType }) {
     selType === ""
       ? proData
       : proData?.filter((i) => i.type === String(selType));
-
+      console.log(FilteredproductData)
   return (
     <>
       {loading || !FilteredproductData ? (
-        <SkeletonPro />
+       <Spinner color="#000"/>
       ) : (
         <>
           <div className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-3 mt-[30px]   gap-3 lg:gap-5">
@@ -59,7 +59,7 @@ export default function PopularProdList({ selType }) {
                     <div className="flex flex-wrap justify-start items-start ">
                       <p class=" font-semibold inline-flex flex-col gap-1 text-gray-800 lg:text-sm text-[10px]">
                         {item.product_name}
-                        <span className="  text-teal-500 lg:text-xl font-bold text-sm  leading-none flex items-center">
+                        <span className="  text-yellow-500 lg:text-xl font-bold text-sm  leading-none flex items-center">
                           {" "}
                           ₹{item.price}
                         </span>
@@ -73,7 +73,7 @@ export default function PopularProdList({ selType }) {
           {DataLength < load ? null : (
             <Button
               onClick={() => GetDataOnLoad(load + 8, DataLength)}
-              className="bg-teal-500 text-white font-bold"
+              className="bg-black text-white font-bold"
             >
               Load More
             </Button>

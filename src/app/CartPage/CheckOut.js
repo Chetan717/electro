@@ -19,7 +19,7 @@ import { DataProvideBYHook } from "../DataProviderContext/DataProviderContext";
 import SignIn from "../Auth/SignIn";
 import OrderPlaced from "./hooks/OrderPlaceHook";
 import SuccessOrder from "./Comp/SuccessOrder";
-import Captcha from "../Captcha/Captcha"
+import Captcha from "../Captcha/Captcha";
 export const CustomRadio = (props) => {
   const { children, ...otherProps } = props;
 
@@ -64,7 +64,7 @@ export default function CheckOut({
           <Button
             onClick={() => HandlePlaceOrder(onOpen)}
             size="lg"
-            className="bg-teal-500 w-full font-bold text-white"
+            className="bg-black w-full font-bold text-white"
           >
             PLACE ORDER
           </Button>
@@ -75,7 +75,6 @@ export default function CheckOut({
             <p className="text-sm bg-gray-50 p-2 rounded-lg font-semibold text-black">
               😎 You are not Login 😎
             </p>
-
           </div>
         </>
       )}
@@ -109,7 +108,7 @@ export default function CheckOut({
                         <p className=" inline-flex flex-row justify-start font-normal text-black text-[16px]">
                           Discount(10%)
                         </p>
-                        <span className="text-teal-500">-10%</span>
+                        <span className="text-yellow-500">-10%</span>
                       </div>
                       <div className="flex justify-start items-start flex-row lg:gap-40 gap-16">
                         <p className=" inline-flex  justify-start flex-row font-normal text-black text-[16px]">
@@ -141,7 +140,9 @@ export default function CheckOut({
                         Shipping
                       </label>
                       <select class="block p-2 text-gray-600 w-full text-sm">
-                        <option>Standard shipping {String(process.env.SHIPPING)}</option>
+                        <option>
+                          Standard shipping {String(process.env.SHIPPING)}
+                        </option>
                       </select>
                     </div>
                     {/* <div class="py-10">
@@ -158,7 +159,7 @@ export default function CheckOut({
                         class="p-2 text-sm w-full"
                       />
                     </div> */}
-                    {/* <button class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">
+                    {/* <button class="bg-black hover:bg-black px-5 py-2 text-sm text-white uppercase">
                       Apply
                     </button> */}
                     <div class="border-t mt-8">
@@ -168,7 +169,15 @@ export default function CheckOut({
                       </div>
                     </div>
                   </div>
-                  {DataCart?.length > 0 ? check === true ? <p></p> : <Captcha setCheck={setCheck} /> : <p></p>}
+                  {DataCart?.length > 0 ? (
+                    check === true ? (
+                      <p></p>
+                    ) : (
+                      <Captcha setCheck={setCheck} />
+                    )
+                  ) : (
+                    <p></p>
+                  )}
                   <div className="w-auto">
                     <RadioGroup
                       label="Payment Mode"
@@ -181,24 +190,15 @@ export default function CheckOut({
                       >
                         Cash On Delivery
                       </CustomRadio>
-                      {/* <CustomRadio
-                        isDisabled={true}
+                      <CustomRadio
                         description="Pay Secure Pay Digitaly"
                         value="UPI"
                       >
                         UPI
                       </CustomRadio>
-                      <CustomRadio
-                        isDisabled={true}
-                        description="Card/Net Banking"
-                        value="CARD"
-                      >
-                        Card/Net Banking
-                      </CustomRadio> */}
                     </RadioGroup>
                   </div>
                 </div>
-
               </ModalBody>
               <ModalFooter className="mt-5">
                 <Button color="danger" variant="light" onPress={onClose}>
@@ -207,9 +207,15 @@ export default function CheckOut({
                 <Button
                   isDisabled={check === true ? false : true}
                   color="#00DDB8"
-                  className="bg-teal-500 text-white font-bold"
+                  className="bg-black text-white font-bold"
                   onPress={() =>
-                    OrderPlaced(orderfinal, setOrderLoad, setStatus, setCheck, onClose)
+                    OrderPlaced(
+                      orderfinal,
+                      setOrderLoad,
+                      setStatus,
+                      setCheck,
+                      onClose
+                    )
                   }
                 >
                   Confirm Order

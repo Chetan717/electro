@@ -20,7 +20,7 @@ export default function TotalCart({ DataCart, total }) {
             <p className=" inline-flex flex-row justify-start gap-40 font-normal text-black text-[16px]">
               Discount({DataCart?.length === 0 ? "0" : process.env.Discount}%)
             </p>
-            <span className="text-teal-500">-{DataCart?.length === 0 ? "0" : process.env.Discount}%</span>
+            <span className="text-yellow-500">-{DataCart?.length === 0 ? "0" : process.env.Discount}%</span>
           </div>
           <div className="flex justify-start items-start flex-row gap-36">
             <p className="text-xs font-semibold text-black">DeliveryCharges-{process.env.SHIPPING}</p>
@@ -34,7 +34,7 @@ export default function TotalCart({ DataCart, total }) {
           <span className="text-black font-bold text-lg">₹{DataCart?.length === 0 ? "0" : total + Number(process.env.SHIPPING) || 0}</span>
         </div>
         <Divider className="my-1" />
-        <p className=" inline-flex  justify-start flex-row gap-40  text-teal-500 font-bold text-sm">
+        <p className=" inline-flex  justify-start flex-row gap-40  text-yellow-500 font-bold text-sm">
           You Save 10 % Money On this Order!
         </p>
       </div>

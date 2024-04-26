@@ -19,17 +19,16 @@ export default function Navbarcom() {
   const router = useRouter();
   return (
     <>
-      <Navbar suppressHydrationWarning={true} isBordered>
+      <Navbar className="bg-black" isBordered>
         <NavbarContent justify="start">
           <NavbarBrand className="mr-4">
             <div
               onClick={() => router.push("/")}
               className="flex flex-row gap-2 cursor-pointer justify-center items-center"
             >
-              <Image width={50} alt="h" height={50} src="/sbt.png" />
-              <p className="text-black inline-flex flex-col  font-bold lg:text-sm text-xs">
-                Soil Booster
-                <span className="">Technology</span>
+              {/* <Image width={50} alt="h" height={50} src="/sbt.png" /> */}
+              <p className="text-white inline-flex flex-col  font-bold lg:text-sm text-xs">
+                <span className="">ELECTONICS.</span>
               </p>
             </div>
           </NavbarBrand>

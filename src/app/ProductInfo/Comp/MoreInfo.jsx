@@ -5,8 +5,8 @@ import Doses from "./MoreInfoComp/Doses";
 import Review from "./MoreInfoComp/Review";
 
 export default function MoreInfo({ des }) {
-  const [tab, setTab] = React.useState("Advantages");
-  const options = ["Advantages", "Ingredients", "Doses", "Review"];
+  const [tab, setTab] = React.useState("Review");
+  const options = [ "Review"];
 
   return (
     <>
@@ -20,7 +20,7 @@ export default function MoreInfo({ des }) {
                   onClick={() => setTab(itm)}
                   className={
                     itm === tab
-                      ? `lg:p-3 p-2 bg-teal-500 text-white font-bold cursor-pointer lg:text-[16px] text-[14px] rounded-[20px] shadow-xl -translate-y-1`
+                      ? `lg:p-3 p-2 bg-black text-white font-bold cursor-pointer lg:text-[16px] text-[14px] rounded-[20px] shadow-xl -translate-y-1`
                       : `lg:p-3 p-2 bg-gray-100 text-black font-semibold cursor-pointer lg:text-[16px] text-[14px] rounded-[20px] hover:shadow-lg hover:-translate-y-1`
                   }
                 >
@@ -31,15 +31,15 @@ export default function MoreInfo({ des }) {
           })}
         </div>
         <div className="flex justify-center mb-5 items-center">
-          {tab === "Advantages" ? (
+          {/* {tab === "Advantages" ? (
             <Description des={des} />
           ) : tab === "Ingredients" ? (
             <AdditionalInfo Ingre={des?.main_ingredient} />
           ) : tab === "Doses" ? (
             <Doses Doses={des?.praman} usecase={des?.usecase} />
-          ) : (
+          ) : ( */}
             <Review Review={des?.review} />
-          )}
+          {/* )} */}
         </div>
       </div>
     </>

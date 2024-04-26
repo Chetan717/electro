@@ -29,7 +29,8 @@ export default function Cart() {
 
         <Image
           loading={`lazy`}
-          src="/img/cart3.png"
+      
+          src="https://img.icons8.com/material-outlined/24/FFFFFF/shopping-cart--v1.png"
           alt="sgfgf"
           width={22}
           height={22}

@@ -42,7 +42,7 @@ export default function Account() {
           <DropdownItem
             onClick={SignOut}
             key="logout"
-            className="hover:bg-teal-500"
+            className="hover:bg-black"
           >
             Log Out
           </DropdownItem>

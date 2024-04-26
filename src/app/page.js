@@ -19,9 +19,9 @@ export default function page() {
         theme="light"
       />
       <div className="flex flex-col justify-center items-center lg:gap-5 gap-5 p-2">
-        <Categoriespro />
+        {/* <Categoriespro /> */}
         {/* <Hero /> */}
-        <Offer />
+        <Offer link={`https://d2xamzlzrdbdbn.cloudfront.net/bg/622cc7cb-6df1-4588-a77f-c8bfa18f738824080457.webp`} />
         <PopularProd />
       </div>
     </>

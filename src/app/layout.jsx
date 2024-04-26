@@ -44,26 +44,14 @@ const RootLayout = ({ children }) => {
         <Head>
           {/* Title */}
           <title>
-            SoilBooster.in | Soil Booster Technology - Improve Soil Health
+            Electornics Store 
           </title>
 
           {/* Description */}
-          <meta
-            name="description"
-            content="Soil Booster Technology specializes in improving soil health and crop yield. Our innovative solutions enhance agricultural productivity. Visit SoilBooster.in to learn more."
-          />
-
-          {/* Keywords */}
-          <meta
-            name="keywords"
-            content="Soil Booster Technology, Soil Health, Crop Yield, Agricultural Productivity, SoilBooster.in"
-          />
+         
 
           {/* Author */}
-          <meta
-            name="Mr.Guruprasad Revgade"
-            content="Soil Booster Technology"
-          />
+        
 
           {/* Viewport */}
           <meta
@@ -77,7 +65,7 @@ const RootLayout = ({ children }) => {
               <Provider store={Store}>
                 <DataProviderContext>
                   <Suspense fallback={<LoaderSuspense />}>
-                    <Banner />
+                    {/* <Banner /> */}
                     <Navbarcom />
                     {children}
                     <Specification />

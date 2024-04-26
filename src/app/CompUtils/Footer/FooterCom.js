@@ -9,19 +9,10 @@ import Refund from "../Refund";
 export default function FooterCom() {
   return (
     <>
-      <div className="relative mt-16 bg-teal-500 flex justify-center items-center">
-        <svg
-          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-teal-500"
-          preserveAspectRatio="none"
-          viewBox="0 0 1440 54"
-        >
-          <path
-            fill="currentColor"
-            d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
-          />
-        </svg>
+      <div className="relative mt-16 bg-black flex justify-center items-center">
+     
         <div className="px-4 flex flex-col gap-5 pt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          <div className=" bg-white  p-3 rounded-lg flex justify-center items-center ">
+          {/* <div className=" bg-white  p-3 rounded-lg flex justify-center items-center ">
             <Link
               href="/"
               aria-label="Go home"
@@ -31,30 +22,30 @@ export default function FooterCom() {
               <Image src={logo} alt="f" width={50} height={0} />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                 <p className="lg:text-2xl text-xs flex lg:flex-row sm:flex-row text-black flex-col font-bold">
-                  Smart Soil Booster Technologies.
+                  Sporto
                 </p>
               </span>
             </Link>
-          </div>
+          </div> */}
 
-          <div className=" max-w-full flex lg:flex-row flex-col justify-center items-center gap-3">
-            <p className="text-gray-100">Smart Soil Booster Technology</p>
-            <p className="text-gray-100">soilbooster@717gmail.com</p>
-            <p className="text-gray-100">Nashik, 422103</p>
-            <p className="text-gray-100">Nashik, Maharastra,India</p>
-          </div>
+          {/* <div className=" max-w-full flex lg:flex-row flex-col justify-center items-center gap-3">
+            <p className="text-gray-100">Sporto</p>
+            <p className="text-gray-100">sporto@7792gmail.com</p>
+            <p className="text-gray-100">Pune, 411030</p>
+            <p className="text-gray-100">Pune, Maharastra,India</p>
+          </div> */}
           <div className="flex flex-row gap-7 justify-center items-center">
-            <div className="grid grid-cols-2 gap-3">
+            {/* <div className="grid grid-cols-2 gap-3">
               <About />
               <ContactUs />
               <Privacy />
               <Refund />
-            </div>
+            </div> */}
           </div>
-          <p className="text-center text-white">
+          {/* <p className="text-center text-white">
             {" "}
-            +91-9822688926/+91-9730866263{" "}
-          </p>
+            +91-2345677865/+91-6467455555{" "}
+          </p> */}
           <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
             <div className="flex items-center bg-gray-100 justify-center gap-5 rounded-lg p-3 mt-4 space-x-4 sm:mt-0">
               <a
@@ -66,7 +57,7 @@ export default function FooterCom() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com/soil_booster_technology/"
+                href="https://www.instagram.com"
                 className="transition-colors duration-300 text-pink-500 hover:text-red-700"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -84,7 +75,7 @@ export default function FooterCom() {
               </a>
 
               <a
-                href="https://www.youtube.com/@smartsoilboostertechnology6089/featured"
+                href="https://www.youtube.com/watch?v=eQbRWBlAV5I"
                 className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
               >
                 <svg
