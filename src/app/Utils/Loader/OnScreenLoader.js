@@ -7,6 +7,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalFooter,
+  Spinner,
   Button,
   useDisclosure,
 } from "@nextui-org/react";
@@ -28,7 +29,7 @@ export default function OnScreenLoader({ status }) {
         closeButton={false}
       >
         <ModalContent shadow={`none`} className="bg-white p-10 rounded-lg">
-          <Loader />
+        <Spinner/>
           <p className="text-black font-semibold text-xs">Please wait your order is processing ...... </p>
         </ModalContent>
       </Modal>
