@@ -244,7 +244,7 @@ export default function SignIn({ status, setStatus, setStatusca }) {
                       </Button>
                     ) : (
                       <Button
-                        className="font-semibold text-sm text-white transition-colors duration-300 bg-white"
+                        className="font-semibold text-sm text-white transition-colors duration-300 bg-black"
                         onClick={(event) =>
                           HandleLogin(login, event, SIGNIN, onClose)
                         }
