@@ -117,7 +117,7 @@ export default function CheckOut({ HandlePlaceOrder, orderfinal, DataCart, total
           <Button
             onClick={() => HandlePlaceOrder(onOpen)}
             size="lg"
-            className="bg-[#476F00] w-full font-bold text-white"
+            className="bg-black w-full font-bold text-white"
           >
             PLACE ORDER
           </Button>
@@ -200,7 +200,7 @@ export default function CheckOut({ HandlePlaceOrder, orderfinal, DataCart, total
             </Button>
             <Button
               isDisabled={check === true ? false : true}
-              color="#00DDB8"
+              color={`default`}
               className="bg-teal-500 text-white font-bold"
               onPress={handlePayment}
             >
