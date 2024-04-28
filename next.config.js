@@ -31,7 +31,7 @@ const nextConfig = {
   },
   env: {
     GRAPHQL_SERVER: "https://serverelectronic.vercel.app/graph",
-    SHIPPING: "Pay To Delivery Partner",
+    SHIPPING: "0",
     Discount: "10",
   },
   headers: [
