@@ -8,6 +8,7 @@ export default function PopularProd() {
   const dispatch = useDispatch();
 
   const img = [
+    { value: "", name: "All"},
     { value: "Air Conditioner", name: "Air Conditioner"},
     { value: "Laptops", name: "Laptops" },
     { value: "Televisions", name: "Televisions" },
