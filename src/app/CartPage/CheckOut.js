@@ -95,7 +95,7 @@ export default function CheckOut({ HandlePlaceOrder, orderfinal, DataCart, total
             address: 'Test Address',
           },
           theme: {
-            color: '#476F00',
+            color: '#00000',
           },
         };
         const rzp = new window.Razorpay(options);
