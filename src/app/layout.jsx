@@ -66,6 +66,7 @@ const RootLayout = ({ children }) => {
                 <DataProviderContext>
                   <Suspense fallback={<LoaderSuspense />}>
                     {/* <Banner /> */}
+                    <a href="https://web.whatsapp.com"> <img src="https://img.icons8.com/color/48/whatsapp--v1.png" className="w-[60px] bottom-[50px] animate-bounce right-[20px] h-[60px] fixed flex justify-center items-center"/></a>
                     <Navbarcom />
                     {children}
                     <Specification />
