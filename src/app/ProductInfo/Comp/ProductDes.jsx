@@ -90,26 +90,26 @@ export default function ProductDes({ des }) {
   return (
     <div className="flex justify-start items-start borde border-gray-400 rounded-lg lg:w-[600px] w-[370px] lg:p-3 p-1 ">
       <div className="flex flex-col justify-start items-start borde p-2 gap-4 w-full m-2 border-gray-400 rounded-lg">
-        <p className="text-xs font-bold text-black bg-yellow-200 p-2 rounded-lg">
+        {/* <p className="text-xs font-bold text-black bg-yellow-200 p-2 rounded-lg">
           Sale {des?.off}%
-        </p>
+        </p> */}
         <h1 className="text-2xl  font-bold text-black">{des?.product_name}</h1>
 
         <p className="text-sm font-semibold text-gray-600">Review(34⭐)</p>
         <div className="flex gap-2 flex-row justify-center items-center">
           <p className="text-3xl font-bold text-yellow-500">₹{des?.price}</p>
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <p className="text-xs font-bold text-yellow-500">{des?.off}%off </p>
             <p className="line-through text-xs font-bold text-gray-400">
               ₹{Number(des?.price) + 10 * Number(des?.off)}
             </p>
-          </div>
+          </div> */}
         </div>
         <p className="text-black text-sm">{des?.description}</p>
         <div className="flex  gap-2 flex-row justify-center items-center">
-          <p className="text-black font-bold lg:text-sm text-xs">
+          {/* <p className="text-black font-bold lg:text-sm text-xs">
             {`Price/Weight:`}{" "}
-          </p>
+          </p> */}
           <div className="flex gap-4 flex-wrap justify-center items-center ">
             {des?.pricelist?.map((key, index) => {
               return (
